@@ -35,6 +35,13 @@ export type SnakeInfo = {
     Right = 'RIGHT',
   }
   
+  export const OpositeDirection = {
+    [Direction.Down]: Direction.Up,
+    [Direction.Up]: Direction.Down,
+    [Direction.Left]: Direction.Right,
+    [Direction.Right]: Direction.Left,
+  }
+  
   export enum RelativeDirection {
     Forward = 'FORWARD',
     Left = 'LEFT',
